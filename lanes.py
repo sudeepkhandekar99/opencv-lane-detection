@@ -37,7 +37,7 @@ def display_lines(image, lines):
     line_image = np.zeros_like(image)
     if lines is not None:
         for x1, y1, x2, y2 in lines:
-            cv2.line(line_image, (x1, y1), (x2,y2), (0, 0, 255), 10)
+            cv2.line(line_image, (x1, y1), (x2,y2), (255, 0, 0), 10)
     return line_image
 
 def region_of_interest(image):
